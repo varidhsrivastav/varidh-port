@@ -2,12 +2,7 @@
 import Footer from "@/components/footer";
 import Image from "next/image";
 
-import {
-  useParams,
-  usePathname,
-  useRouter,
-  useSearchParams,
-} from "next/navigation";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { Project } from "@/utils/types";
 import projectData from "@/api/project.json";
 import Link from "next/link";
