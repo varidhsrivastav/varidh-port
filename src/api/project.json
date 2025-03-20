@@ -1,0 +1,183 @@
+[
+  {
+    "id": 1,
+    "title": "NexusNovus",
+    "subtitle": "The platform enables agencies to manage multiple clients, track business performance.",
+    "features": true,
+    "description": "Developed a B2C SaaS application for user integrations and automation. Implemented Next.js, Clerk Authentication, and Stripe, achieving seamless workflows. Created a drag-and-drop node builder and expandable sidebar, ensuring a dynamic user interface.",
+    "coverImage": "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742280321/Screenshot_2025-03-18_12_15_04_q7zj9o.png",
+    "functionality": [
+      "Next.js",
+      "Clerk Authentication",
+      "User Integrations",
+      "Drag-and-Drop Node Builder",
+      "Kanban Board"
+    ],
+    "projectType": "Web-Application",
+    "techUsed": [
+      "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742234290/logos_typescript-icon_jgwkp1.png",
+      "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742278220/devicon_tailwindcss_vrqvea.png",
+      "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742279467/idMpcRsV8E_gxq86p.png",
+      "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742279204/next_cfapif.png",
+      "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742279204/next_cfapif.png"
+    ],
+    "links": {
+      "live": "https://live-link.com",
+      "repo": "https://github.com/varidhsrivastav/NexusNovus"
+    },
+    "images": [
+      "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742280158/Screenshot_2025-03-18_12_05_42_kd2auf.png",
+      "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742158271/Landing_page_c6jclu.png",
+      "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742280156/Screenshot_2025-03-18_12_08_43_gywwfc.png",
+      "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742280156/Screenshot_2025-03-18_12_09_11_thzrau.png",
+      "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742280156/Screenshot_2025-03-18_12_07_37_xs0npp.png",
+      "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742280156/Screenshot_2025-03-18_12_07_37_xs0npp.png"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Pair-Programming",
+    "features": true,
+    "subtitle": "Collaborate in Real-Time with Live Code Sharing",
+    "description": "A web-based pair programming app that lets developers create rooms for live coding sessions. Features include screen sharing, GitHub link sharing, and real-time communication for seamless collaboration.",
+    "coverImage": "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742285832/Screenshot_2025-03-18_12_57_26_jjqimt.png",
+    "functionality": [
+      "Room Creation & Management",
+      "Live Screen Sharing",
+      "Video & Audio Communication",
+      "Real-time Code Collaboration",
+      "Multi-User Support"
+    ],
+    "projectType": "Web-Application",
+    "techUsed": [
+      "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742285832/Screenshot_2025-03-18_12_57_26_jjqimt.png",
+      "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742285830/Screenshot_2025-03-18_12_59_25_hbe4yf.png",
+      "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742285834/Screenshot_2025-03-18_12_59_13_mgokdf.png",
+      "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742285831/Screenshot_2025-03-18_12_57_44_ecak9t.png"
+    ],
+    "links": {
+      "live": "https://live-link.com",
+      "repo": "https://github.com/varidhsrivastav/PairProg"
+    },
+    "images": [
+      "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742285832/Screenshot_2025-03-18_12_57_26_jjqimt.png",
+      "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742285830/Screenshot_2025-03-18_12_59_25_hbe4yf.png",
+      "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742285834/Screenshot_2025-03-18_12_59_13_mgokdf.png",
+      "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742285831/Screenshot_2025-03-18_12_57_44_ecak9t.png"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "AutoV1",
+    "features": true,
+    "subtitle": "Effortless Workflow Automation, Built for Scalability",
+    "description": "autov1 is a powerful SaaS Automation Builder designed to streamline business processes without relying on third-party integration libraries. Built for flexibility and efficiency, it enables businesses of all sizes to create seamless automation flows, connecting various services effortlessly. With a fully customizable approach, autov1 ensures a smooth and scalable automation experience tailored to your needs.",
+    "coverImage": "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742285759/Screenshot_2025-03-18_12_17_33_fjxt8f.png",
+    "functionality": [
+      "Drag-and-Drop Automation Builder",
+      "Native Service Integrations",
+      "Conditional Logic & Triggers",
+      "Real-Time Execution & Monitoring"
+    ],
+    "projectType": "Web Application",
+    "techUsed": [
+      "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742279204/next_cfapif.png",
+      "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742234290/logos_typescript-icon_jgwkp1.png",
+      "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742278220/devicon_tailwindcss_vrqvea.png",
+      "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742279204/next_cfapif.png",
+      "/icons/typescript.png",
+      "/icons/sql-server.png",
+      "/icons/html-5.png"
+    ],
+    "links": {
+      "live": "https://live-link.com",
+      "repo": "https://github.com/repo"
+    },
+    "images": [
+      "/autoit/login.png",
+      "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742158271/Landing_page_c6jclu.png",
+      "/autoit/add.png",
+      "/autoit/connec.png",
+      "/autoit/connection.png",
+      "/autoit/workflow.png"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "NotYourCalc",
+    "subtitle": "Developed a B2C SaaS application for user integrations",
+    "features": true,
+    "description": "Developed a B2C SaaS application for user integrations and automation. Implemented Next.js, Clerk Authentication, and Stripe, achieving seamless workflows. Created a drag-and-drop node builder and expandable sidebar, ensuring a dynamic user interface.",
+    "coverImage": "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742285796/written_llzebq.png",
+    "functionality": [
+      "User Integrations",
+      "Automation",
+      "Next.js",
+      "Clerk Authentication",
+      "Stripe",
+      "Drag-and-Drop Node Builder",
+      "Expandable Sidebar"
+    ],
+    "projectType": "Web Application",
+    "techUsed": [
+      "/icons/c-.png",
+      "/icons/C.png",
+      "/icons/python.png",
+      "/icons/js.png",
+      "/icons/typescript.png",
+      "/icons/sql-server.png",
+      "/icons/html-5.png"
+    ],
+    "links": {
+      "live": "https://live-link.com",
+      "repo": "https://github.com/repo"
+    },
+    "images": [
+      "/autoit/login.png",
+      "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742158271/Landing_page_c6jclu.png",
+      "/autoit/add.png",
+      "/autoit/connec.png",
+      "/autoit/connection.png",
+      "/autoit/workflow.png"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Sarvmatre",
+    "features": false,
+    "subtitle": "Subtitle",
+    "description": "Developed a B2C SaaS application for user integrations and automation. Implemented Next.js, Clerk Authentication, and Stripe, achieving seamless workflows. Created a drag-and-drop node builder and expandable sidebar, ensuring a dynamic user interface.",
+    "coverImage": "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742285909/Screenshot_2025-03-18_13_08_11_vyfcgu.png",
+    "functionality": [
+      "User Integrations",
+      "Automation",
+      "Next.js",
+      "Clerk Authentication",
+      "Stripe",
+      "Drag-and-Drop Node Builder",
+      "Expandable Sidebar"
+    ],
+    "projectType": "Web Application",
+    "techUsed": [
+      "/icons/c-.png",
+      "/icons/C.png",
+      "/icons/python.png",
+      "/icons/js.png",
+      "/icons/typescript.png",
+      "/icons/sql-server.png",
+      "/icons/html-5.png"
+    ],
+    "links": {
+      "live": "https://live-link.com",
+      "repo": "https://github.com/repo"
+    },
+    "images": [
+      "/autoit/login.png",
+      "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742158271/Landing_page_c6jclu.png",
+      "/autoit/add.png",
+      "/autoit/connec.png",
+      "/autoit/connection.png",
+      "/autoit/workflow.png"
+    ]
+  }
+]
