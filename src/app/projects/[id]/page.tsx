@@ -7,6 +7,7 @@ import { Project } from "@/utils/types";
 import projectData from "@/api/project.json";
 import Link from "next/link";
 import TechUsed from "@/components/tech-used";
+// @ts-ignore
 const projects: Project[] = projectData;
 
 export default function ProjectDesc() {

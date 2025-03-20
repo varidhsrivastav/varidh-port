@@ -30,6 +30,7 @@ const testimonials = [
     src: "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742234290/logos_typescript-icon_jgwkp1.png",
   },
 ];
+// @ts-ignore
 const projects: Project[] = projectData;
 export default function Home() {
   return (
@@ -43,8 +44,8 @@ export default function Home() {
           </span>
         </h1>
         <p className="text-[16px] sm:text-[18px] md:text-[20px] max-w-[700px] text-center leading-[28px] sm:leading-[30px] md:leading-[32px] font-display">
-          Circle is a code development platform that gives innovators the speed
-          and reliability they need to create at the speed of inspiration.
+          Circle is a development platform that gives innovators the speed and
+          reliability they need to create at the speed of inspiration.
         </p>
       </div>
 

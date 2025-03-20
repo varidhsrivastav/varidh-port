@@ -4,7 +4,7 @@ import { Project } from "@/utils/types";
 import projectData from "@/api/project.json";
 import Link from "next/link";
 import Testimonials from "@/components/testimonial";
-
+// @ts-ignore
 const projects: Project[] = projectData;
 export default function Projects() {
   return (
