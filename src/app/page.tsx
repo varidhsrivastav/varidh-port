@@ -1,5 +1,12 @@
 import TechGrid from "@/components/Skills";
 import { Project } from "@/utils/types";
+import {
+  ArrowBigDown,
+  ArrowRight,
+  ChevronRight,
+  Heart,
+  MoveUpRight,
+} from "lucide-react";
 import projectData from "@/api/project.json";
 import Image from "next/image";
 import Link from "next/link";
@@ -142,23 +149,52 @@ export default function Home() {
                 .filter((_, index) => index % 2 === 0)
                 .map((project) =>
                   project.features ? (
-                    <div key={project.id}>
-                      <Link
-                        href={`/projects/${project.id}`}
-                        className="relative text-[24px] sm:text-[28px] md:text-[32px] font-medium text-white leading-[32px] sm:leading-[36px] md:leading-[40px] font-display"
+                    // <div key={project.id}>
+                    //   <Link
+                    //     href={`/projects/${project.id}`}
+                    //     className="relative text-[24px] sm:text-[28px] md:text-[32px] font-medium text-white leading-[32px] sm:leading-[36px] md:leading-[40px] font-display"
+                    //   >
+                    //     <Image
+                    //       src={project.coverImage}
+                    //       alt={project.title}
+                    //       width={1000}
+                    //       height={1000}
+                    //       className="w-full rounded-[4px] h-auto"
+                    //     />
+                    //     <div className="py-2 px-4 absolute bottom-0 left-0 right-0 text-[14px] sm:text-[16px] max-w-[700px] leading-[22px] sm:leading-[24px] font-display bg-black bg-opacity-50">
+                    //       {project.title} - {project.subtitle}
+                    //     </div>
+                    //   </Link>
+                    // </div>
+                    <>
+                      <div
+                        key={project.id}
+                        className="relative text-[24px] sm:text-[28px] md:text-[32px] font-medium text-white leading-[32px] sm:leading-[36px] md:leading-[40px] font-display  group flex flex-col rounded-[4px] border-[1px] border-[#1B3B57] bg-[rgba(42,65,85,0.20)] backdrop-blur-[25px]"
                       >
-                        <Image
-                          src={project.coverImage}
-                          alt={project.title}
-                          width={1000}
-                          height={1000}
-                          className="w-full rounded-[4px] h-auto"
-                        />
-                        <div className="py-2 px-4 absolute bottom-0 left-0 right-0 text-[14px] sm:text-[16px] max-w-[700px] leading-[22px] sm:leading-[24px] font-display bg-black bg-opacity-50">
-                          {project.title} - {project.subtitle}
+                        <div className="w-full rounded-t-[4px]  h-[350px] group-hover:h-[410px] overflow-hidden transition-all duration-300">
+                          <Image
+                            src={project.coverImage}
+                            alt="shoes"
+                            width={600}
+                            height={600}
+                            className="h-full w-full  scale-105 group-hover:scale-100 grayscale group-hover:grayscale-0 object-cover transition-all duration-300"
+                          />
                         </div>
-                      </Link>
-                    </div>
+                        <article className="relative overflow-hidden  flex-grow">
+                          <div className="info p-2 translate-y-0 group-hover:-translate-y-20 transition-all duration-300">
+                            <p className="md:text-2xl font-semibold">
+                              {project.title}
+                            </p>
+                            <p className="sm:text-base text-sm">
+                              {project.subtitle}
+                            </p>
+                          </div>
+                          <button className="absolute h-10 -bottom-8 opacity-0 group-hover:opacity-100 cursor-pointer group-hover:bottom-3  text-3xl font-medium transition-all duration-300 w-full text-center">
+                            {project.title}
+                          </button>
+                        </article>
+                      </div>
+                    </>
                   ) : null,
                 )}
             </div>
@@ -169,23 +205,35 @@ export default function Home() {
                 .filter((_, index) => index % 2 !== 0)
                 .map((project) =>
                   project.features ? (
-                    <div key={project.id}>
-                      <Link
-                        href={`/projects/${project.id}`}
-                        className="relative text-[24px] sm:text-[28px] md:text-[32px] font-medium text-white leading-[32px] sm:leading-[36px] md:leading-[40px] font-display"
+                    <>
+                      <div
+                        key={project.id}
+                        className="relative text-[24px] sm:text-[28px] md:text-[32px] font-medium text-white leading-[32px] sm:leading-[36px] md:leading-[40px] font-display  group flex flex-col rounded-[4px] border-[1px] border-[#1B3B57] bg-[rgba(42,65,85,0.20)] backdrop-blur-[25px]"
                       >
-                        <Image
-                          src={project.coverImage}
-                          alt={project.title}
-                          width={1000}
-                          height={1000}
-                          className="w-full rounded-[4px] h-auto"
-                        />
-                        <div className="py-2 px-4 absolute bottom-0 left-0 right-0 text-[14px] sm:text-[16px] max-w-[700px] leading-[22px] sm:leading-[24px] font-display bg-black bg-opacity-50">
-                          {project.title} - {project.subtitle}
+                        <div className="w-full rounded-t-[4px]  h-[350px] group-hover:h-[410px] overflow-hidden transition-all duration-300">
+                          <Image
+                            src={project.coverImage}
+                            alt="shoes"
+                            width={600}
+                            height={600}
+                            className="h-full w-full   scale-105 group-hover:scale-100 grayscale group-hover:grayscale-0 object-cover transition-all duration-300"
+                          />
                         </div>
-                      </Link>
-                    </div>
+                        <article className="relative overflow-hidden  flex-grow">
+                          <div className="info p-2 translate-y-0 group-hover:-translate-y-20 transition-all duration-300">
+                            <p className="md:text-2xl font-semibold">
+                              {project.title}
+                            </p>
+                            <p className="sm:text-base text-sm">
+                              {project.subtitle}
+                            </p>
+                          </div>
+                          <button className="absolute h-10 -bottom-8 opacity-0 group-hover:opacity-100 cursor-pointer group-hover:bottom-3  text-3xl font-medium transition-all duration-300 w-full text-center">
+                            {project.title}
+                          </button>
+                        </article>
+                      </div>
+                    </>
                   ) : null,
                 )}
             </div>
