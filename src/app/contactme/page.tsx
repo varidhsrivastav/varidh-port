@@ -49,7 +49,7 @@ export default function Contact() {
         USER_ID,
       );
       reset(); // Refresh the form
-      router.push("/thankyoupage"); // Redirect
+      router.push("/"); // Redirect
     } catch (error) {
       console.error("Email sending failed:", error);
       alert("Failed to send message. Please try again.");

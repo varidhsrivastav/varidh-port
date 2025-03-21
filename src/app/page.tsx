@@ -14,6 +14,7 @@ import Footer from "@/components/footer";
 import { AnimatedTestimonials } from "@/components/ui/animated-testimonials";
 import Testimonials from "@/components/testimonial";
 import { DragCards } from "@/components/about-me";
+import { About } from "@/components/about";
 const testimonials = [
   {
     quote:
@@ -51,88 +52,19 @@ export default function Home() {
           </span>
         </h1>
         <p className="text-[16px] sm:text-[18px] md:text-[20px] max-w-[700px] text-center leading-[28px] sm:leading-[30px] md:leading-[32px] font-display">
-          Circle is a development platform that gives innovators the speed and
-          reliability they need to create at the speed of inspiration.
+          Web developer specializing in Next.js, React, and scalable system
+          design, crafting high-performance applications with seamless backend
+          integration.
         </p>
       </div>
 
       {/* /about */}
-      <div className="pt-[64px] sm:pt-[80px] md:pt-[96px] min-h-screen flex flex-col gap-6 sm:gap-8 text-center">
+      <div className="py-[64px] sm:py-[80px] md:py-[96px] min-h-screen flex flex-col gap-6 sm:gap-16 text-center">
         <span className="text-[36px] sm:text-[44px] md:text-[52px] font-medium text-white leading-[44px] sm:leading-[56px] md:leading-[64px] font-display">
           All about me
         </span>
-        <div className="md:hidden flex flex-col gap-3">
-          {" "}
-          {/* card 1 */}
-          <div className="rounded-[4px] border-[1px] border-[#1B3B57] max-w-[100%] min-w-[90%] md:max-w-[588px] md:min-w-[588px] bg-[rgba(42,65,85,0.20)] backdrop-blur-[25px] p-6 md:p-8">
-            <Image
-              src="https://res.cloudinary.com/dsalsyu0z/image/upload/v1741634245/test_mgg6tr.png"
-              alt="Image Description"
-              width={528}
-              height={392}
-              className="w-full max-h-[280px] md:max-h-[392px]"
-            />
-          </div>
-          {/* card 2 */}
-          <div className="max-w-[90%] min-w-[100%] md:max-w-[588px] md:min-w-[588px] rounded-[4px] border-[1px] border-[#1B3B57] bg-[rgba(42,65,85,0.20)] backdrop-blur-[25px] p-6 md:p-8">
-            <div className="text-white flex flex-col gap-6">
-              <div className="text-left text-[#E2E4E9] font-display text-[20px] md:text-[23px] font-medium leading-[28px]">
-                Work Experience
-              </div>
-              <div className="flex text-white gap-4 flex-col">
-                {[...Array(3)].map((_, i) => (
-                  <div key={i} className="text-left">
-                    <div className="font-display text-[18px] md:text-[23px] leading-[26px] md:leading-[28px] font-normal">
-                      Job Title
-                    </div>
-                    <div className="font-display text-[14px] md:text-[16px] font-normal leading-[24px]">
-                      Company Name (Year - Year)
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>{" "}
-          {/* card 3 */}
-          <div className="rounded-[4px] border-[1px] border-[#1B3B57] max-w-[100%] min-w-[90%] md:max-w-[588px] md:min-w-[588px] bg-[rgba(42,65,85,0.20)] backdrop-blur-[25px] p-6 md:p-8">
-            <div className="text-white flex flex-col gap-2">
-              <div className="text-left text-[#E2E4E9] font-display text-[20px] md:text-[23px] font-medium leading-[28px]">
-                Bio
-              </div>
-              <div className="font-display text-[14px] md:text-[16px] font-normal leading-[22px] md:leading-[24px] text-left">
-                Led the design and implementation of scalable system
-                architectures, managing a team of 8-10 developers using Next.js,
-                Tailwind, and FastAPI. Managed project completion and task
-                organization using Jira, improving workflow efficiency.
-              </div>
-            </div>
-          </div>
-          {/* Card 4 - Something */}
-          <div className="rounded-[4px] border-[1px] border-[#1B3B57] max-w-[100%] min-w-[90%] md:max-w-[588px] md:min-w-[588px] bg-[rgba(42,65,85,0.20)] backdrop-blur-[25px] p-6 md:p-8">
-            <div className="text-white flex flex-col gap-4">
-              <div className="text-left text-[#E2E4E9] font-display text-[20px] md:text-[23px] font-medium leading-[28px]">
-                Something
-              </div>
-              <div className="font-display text-[14px] md:text-[16px] font-normal leading-[22px] md:leading-[24px] text-left">
-                Led the design and implementation of scalable system
-                architectures, managing a team of 8-10 developers.
-              </div>
-            </div>
-          </div>
-          <div className="rounded-[4px] border-[1px] border-[#1B3B57] max-w-[100%] min-w-[90%] md:max-w-[588px] md:min-w-[588px] bg-[rgba(42,65,85,0.20)] backdrop-blur-[25px] p-6 md:p-8">
-            <div className="text-white flex flex-col gap-2">
-              <div className="text-left text-[#E2E4E9] font-display text-[20px] md:text-[23px] font-medium leading-[28px]">
-                Hobbies
-              </div>
-              <div className="font-display text-[14px] md:text-[16px] font-normal leading-[22px] md:leading-[24px] text-left">
-                Led the design and implementation of scalable system
-                architectures, managing a team of 8-10 developers.
-              </div>
-            </div>
-          </div>
-        </div>
         <div className="">
-          <DragCards />
+          <About />
         </div>
       </div>
 
@@ -149,23 +81,6 @@ export default function Home() {
                 .filter((_, index) => index % 2 === 0)
                 .map((project) =>
                   project.features ? (
-                    // <div key={project.id}>
-                    //   <Link
-                    //     href={`/projects/${project.id}`}
-                    //     className="relative text-[24px] sm:text-[28px] md:text-[32px] font-medium text-white leading-[32px] sm:leading-[36px] md:leading-[40px] font-display"
-                    //   >
-                    //     <Image
-                    //       src={project.coverImage}
-                    //       alt={project.title}
-                    //       width={1000}
-                    //       height={1000}
-                    //       className="w-full rounded-[4px] h-auto"
-                    //     />
-                    //     <div className="py-2 px-4 absolute bottom-0 left-0 right-0 text-[14px] sm:text-[16px] max-w-[700px] leading-[22px] sm:leading-[24px] font-display bg-black bg-opacity-50">
-                    //       {project.title} - {project.subtitle}
-                    //     </div>
-                    //   </Link>
-                    // </div>
                     <>
                       <div
                         key={project.id}

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { DM_Mono, Fira_Code } from "next/font/google";
 import "./globals.css";
+
 import {
   ContactIcon,
   Facebook,

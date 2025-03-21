@@ -3,23 +3,16 @@ const testimonials = [
   {
     quote:
       "The attention to detail and innovative features have completely transformed our workflow. This is exactly what we've been looking for.",
-    name: "Sarah Chen",
-    designation: "Product Manager at TechFlow",
+    name: "Divyankit Singh",
+    designation: "Director at Dezainahub",
     src: "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742234290/logos_typescript-icon_jgwkp1.png",
   },
   {
     quote:
-      "The attention to detail and innovative features have completely transformed our workflow. This is exactly what we've been looking for.",
-    name: "Sarah Chen",
-    designation: "Product Manager at TechFlow",
-    src: "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742234290/logos_typescript-icon_jgwkp1.png",
-  },
-  {
-    quote:
-      "The attention to detail and innovative features have completely transformed our workflow. This is exactly what we've been looking for.",
-    name: "Sarah Chen",
-    designation: "Product Manager at TechFlow",
-    src: "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742234290/logos_typescript-icon_jgwkp1.png",
+      "Varidh's technical skills and leadership abilities are outstanding. He not only develops robust applications but also mentors teams, ensuring smooth project execution with top-notch code quality.",
+    name: "Sorabh Jain",
+    designation: "Director at Sarvmatre pvt int ltd.",
+    src: "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742548368/sorabh_s9v8qn.jpg",
   },
 ];
 export default function Testimonials() {
@@ -35,3 +28,10 @@ export default function Testimonials() {
     </>
   );
 }
+// {
+//   quote:
+//     "The attention to detail and innovative features have completely transformed our workflow. This is exactly what we've been looking for.",
+//   name: "Jai Gupta",
+//   designation: "Director at Rablo.in",
+//   src: "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742234290/logos_typescript-icon_jgwkp1.png",
+// },
