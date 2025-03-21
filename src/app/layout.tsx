@@ -31,7 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning={true}>
-      <body className={`${firaCode.variable} antialiased relative `}>
+      <body className={`${firaCode.variable} antialiased relative  `}>
         <div className=" hidden fixed z-[100] backdrop-blur-[25px]    border border-[#3C454D] left-2 top-2   py-4 px-16 right-2 md:flex flex-row justify-between">
           <div className="min-w-[140px] min-h-[24px] flex flex-row justify-center items-center">
             <Image
@@ -93,7 +93,7 @@ export default function RootLayout({
             {" "}
           </div>
         </div>
-        <div className="fixed  top-0 left-0 right-0 bottom-0 -z-10 overflow-hidden">
+        <div className="fixed  top-0 left-0 right-0 bottom-0 -z-10 overflow-hidden w-full ">
           <Image
             src="https://res.cloudinary.com/dsalsyu0z/image/upload/v1742158271/Landing_page_c6jclu.png"
             alt="Varidh Logo"
@@ -101,8 +101,8 @@ export default function RootLayout({
             height={100}
             className="w-full h-full -z-10"
           />
-          {/* <video
-            className="w-[150%] aspect-video h-full absolute top-0 bottom-0 "
+          <video
+            className="w-screen h-screen absolute top-0 bottom-0 object-cover left-0 opacity-5 "
             controls
             autoPlay
             loop
@@ -111,10 +111,10 @@ export default function RootLayout({
             <source
               src="https://res.cloudinary.com/dsalsyu0z/video/upload/v1742208321/0_Code_Computer_Code_3840x2160_yuqfyt.mp4"
               type="video/mp4"
-              className="h-full w-[150%] aspect-video absolute"
+              className="w-screen h-screen aspect-video absolute  border-8 "
             />
             Your browser does not support the video tag.
-          </video> */}
+          </video>
         </div>
         <div className="text-white ">{children}</div>
       </body>
