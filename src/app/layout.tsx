@@ -15,6 +15,7 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import Footer from "@/components/footer";
+
 const firaCode = Fira_Code({
   variable: "--font-fira-code",
   subsets: ["latin"],
@@ -22,7 +23,6 @@ const firaCode = Fira_Code({
 
 export const metadata: Metadata = {
   title: "Varidh Portfolio",
-  description: "Developer Portfolio",
 };
 
 export default function RootLayout({
