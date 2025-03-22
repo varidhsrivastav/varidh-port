@@ -52,7 +52,7 @@ export function About() {
           width={500}
           height={500}
           alt="linear demo image"
-          className="absolute  -right-90 lg:opacity-100 opacity-25 md:-right-[40%] lg:-right-[20%] -bottom-40 object-contain rounded-2xl -z-10"
+          className="absolute  -right-90  opacity-50 md:-right-[50%] lg:-right-[40%] -bottom-40 object-contain rounded-2xl -z-10"
         />
       </WobbleCard>
       <WobbleCard containerClassName="col-span-1 min-h-[400px] border rounded-[4px] border-[#1B3B57] bg-[rgba(42,65,85,0.20)] backdrop-blur-[25px] bg-[url('https://res.cloudinary.com/dsalsyu0z/image/upload/v1742542385/WhatsApp_Image_2025-03-21_at_13.01.31_rdcfls.jpg')] bg-cover bg-center bg-no-repeat">

@@ -10,6 +10,7 @@ import {
   Instagram,
   LinkedinIcon,
   Mail,
+  PanelsTopLeft,
   Projector,
 } from "lucide-react";
 import Image from "next/image";
@@ -33,6 +34,47 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning={true}>
       <body className={`${firaCode.variable} antialiased relative  `}>
+        <div className=" md:hidden fixed z-[100] backdrop-blur-[25px]    border border-[#3C454D] left-2 top-2   py-4 px-2 right-2 flex flex-row justify-between">
+          <div className="min-w-[100px] min-h-[24px] flex flex-row justify-center items-center">
+            <Image
+              src="https://res.cloudinary.com/dsalsyu0z/image/upload/v1742223121/Varidh_logo_ll6tye.png"
+              alt="Varidh Logo"
+              width={100}
+              height={24}
+            />
+          </div>
+          <div>
+            <Link
+              href="/contactme"
+              className="border border-[#3C454D] rounded-[4px] min-h-[24px] py-2 px-4 text-[16px] leading-[24px] text-white font-dmono "
+            >
+              Contact me{" "}
+            </Link>
+          </div>
+        </div>
+        <div className="fixed z-[100] backdrop-blur-[25px]  border px-16 gap-8 py-4 text-white md:hidden flex flex-row justify-center items-center left-2 bottom-2 border-[#3C454D]  right-2">
+          <Link href="/">
+            <HomeIcon className="w-6 h-6 text-white" />
+          </Link>
+          <Link href="/projects">
+            <PanelsTopLeft className="w-6 h-6 text-white" />
+          </Link>
+          <Link href="/contactme">
+            <ContactIcon className="w-6 h-6 text-white" />
+          </Link>
+          <Link
+            href="https://www.linkedin.com/in/varidhsrivastav1/"
+            target="_blank"
+          >
+            <LinkedinIcon className="w-6 h-6 text-white" />
+          </Link>
+          <Link href="mailto:varidhsrivastava19145@gmail.com" target="_blank">
+            <Mail className="w-6 h-6 text-white" />
+          </Link>
+          {/* <div className="h-full w-[1px] border-[#3C454D] border-l-[1px] absolute bottom-0 left-[56px]">
+            {" "}
+          </div> */}
+        </div>
         <div className=" hidden fixed z-[100] backdrop-blur-[25px]    border border-[#3C454D] left-2 top-2   py-4 px-16 right-2 md:flex flex-row justify-between">
           <div className="min-w-[140px] min-h-[24px] flex flex-row justify-center items-center">
             <Image
@@ -56,7 +98,7 @@ export default function RootLayout({
             <HomeIcon className="w-6 h-6 text-white" />
           </Link>
           <Link href="/projects">
-            <Projector className="w-6 h-6 text-white" />
+            <PanelsTopLeft className="w-6 h-6 text-white" />
           </Link>
           <Link href="/contactme">
             <ContactIcon className="w-6 h-6 text-white" />

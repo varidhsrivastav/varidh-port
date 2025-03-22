@@ -1,4 +1,5 @@
 import TechGrid from "@/components/Skills";
+import { HyperText } from "@/components/magicui/hyper-text";
 import { Project } from "@/utils/types";
 import {
   ArrowBigDown,
@@ -15,29 +16,7 @@ import { AnimatedTestimonials } from "@/components/ui/animated-testimonials";
 import Testimonials from "@/components/testimonial";
 import { DragCards } from "@/components/about-me";
 import { About } from "@/components/about";
-const testimonials = [
-  {
-    quote:
-      "The attention to detail and innovative features have completely transformed our workflow. This is exactly what we've been looking for.",
-    name: "Sarah Chen",
-    designation: "Product Manager at TechFlow",
-    src: "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742234290/logos_typescript-icon_jgwkp1.png",
-  },
-  {
-    quote:
-      "The attention to detail and innovative features have completely transformed our workflow. This is exactly what we've been looking for.",
-    name: "Sarah Chen",
-    designation: "Product Manager at TechFlow",
-    src: "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742234290/logos_typescript-icon_jgwkp1.png",
-  },
-  {
-    quote:
-      "The attention to detail and innovative features have completely transformed our workflow. This is exactly what we've been looking for.",
-    name: "Sarah Chen",
-    designation: "Product Manager at TechFlow",
-    src: "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742234290/logos_typescript-icon_jgwkp1.png",
-  },
-];
+
 // @ts-ignore
 const projects: Project[] = projectData;
 export default function Home() {
@@ -48,7 +27,8 @@ export default function Home() {
         <h1 className="text-[40px] sm:text-[48px] md:text-[64px] leading-[50px] sm:leading-[64px] md:leading-[80px] font-display text-center font-semibold">
           Hello World! My name is <br />
           <span className="text-[40px] sm:text-[48px] md:text-[64px] text-[#3899E8] leading-[50px] sm:leading-[64px] md:leading-[80px] font-display text-center font-semibold">
-            {"{"}Varidh Srivastav{"}"}
+            {/* <HyperText>&#123;Varidh Srivastav &#125;</HyperText> */}
+            <HyperText> &#123; Varidh Srivastav &#125;</HyperText>
           </span>
         </h1>
         <p className="text-[16px] sm:text-[18px] md:text-[20px] max-w-[700px] text-center leading-[28px] sm:leading-[30px] md:leading-[32px] font-display">
@@ -82,7 +62,8 @@ export default function Home() {
                 .map((project) =>
                   project.features ? (
                     <>
-                      <div
+                      <Link
+                        href={`/projects/${project.id}`}
                         key={project.id}
                         className="relative text-[24px] sm:text-[28px] md:text-[32px] font-medium text-white leading-[32px] sm:leading-[36px] md:leading-[40px] font-display  group flex flex-col rounded-[4px] border-[1px] border-[#1B3B57] bg-[rgba(42,65,85,0.20)] backdrop-blur-[25px]"
                       >
@@ -108,7 +89,7 @@ export default function Home() {
                             {project.title}
                           </button>
                         </article>
-                      </div>
+                      </Link>
                     </>
                   ) : null,
                 )}
@@ -121,7 +102,8 @@ export default function Home() {
                 .map((project) =>
                   project.features ? (
                     <>
-                      <div
+                      <Link
+                        href={`/projects/${project.id}`}
                         key={project.id}
                         className="relative text-[24px] sm:text-[28px] md:text-[32px] font-medium text-white leading-[32px] sm:leading-[36px] md:leading-[40px] font-display  group flex flex-col rounded-[4px] border-[1px] border-[#1B3B57] bg-[rgba(42,65,85,0.20)] backdrop-blur-[25px]"
                       >
@@ -147,7 +129,7 @@ export default function Home() {
                             {project.title}
                           </button>
                         </article>
-                      </div>
+                      </Link>
                     </>
                   ) : null,
                 )}
