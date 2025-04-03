@@ -58,12 +58,21 @@ export function About() {
       <WobbleCard containerClassName="col-span-1 min-h-[400px] border rounded-[4px] border-[#1B3B57] bg-[rgba(42,65,85,0.20)] backdrop-blur-[25px] bg-[url('https://res.cloudinary.com/dsalsyu0z/image/upload/v1742542385/WhatsApp_Image_2025-03-21_at_13.01.31_rdcfls.jpg')] bg-cover bg-center bg-no-repeat">
         <div className="hidden">c</div>
       </WobbleCard>
-
-      <WobbleCard containerClassName="col-span-1 flex justify-center items-center  border rounded-[4px] border-[#1B3B57]   bg-[rgba(42,65,85,0.20)] backdrop-blur-[25px]  ">
+      <WobbleCard containerClassName="col-span-1 min-h-[400px] border rounded-[4px] border-[#1B3B57] bg-[rgba(42,65,85,0.20)] backdrop-blur-[25px] bg-[url('https://res.cloudinary.com/dsalsyu0z/image/upload/v1743014922/Simple_Aesthetic_Quote_Instagram_Post_pnde92.png')] bg-cover bg-center bg-no-repeat">
+        <div className="hidden">c</div>
+      </WobbleCard>
+      {/* <WobbleCard containerClassName="col-span-1 flex justify-center items-center  border rounded-[4px] border-[#1B3B57]   bg-[rgba(42,65,85,0.20)] backdrop-blur-[25px]  ">
         <h1 className="text-[50px]">
           {'" '}वयं यत् स्मः तत् पश्यामः, वयं यत् पश्यामः
+          <Image
+            src="https://res.cloudinary.com/dsalsyu0z/image/upload/v1743014922/Simple_Aesthetic_Quote_Instagram_Post_pnde92.png"
+            width={500}
+            height={500}
+            alt="linear demo image"
+            className="absolute  -right-90  opacity-50 md:-right-[50%] lg:-right-[40%] -bottom-40 object-contain rounded-2xl -z-10"
+          />
         </h1>
-      </WobbleCard>
+      </WobbleCard> */}
       <WobbleCard containerClassName="col-span-1 lg:col-span-2 border rounded-[4px] border-[#1B3B57]   bg-[rgba(42,65,85,0.20)] backdrop-blur-[25px] min-h-[500px] lg:min-h-[600px] xl:min-h-[300px] gap-4">
         <div className="flex flex-col gap-3">
           {experience.map((ex, i) => (
