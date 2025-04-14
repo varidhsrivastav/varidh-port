@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { DM_Mono, Fira_Code } from "next/font/google";
 import "./globals.css";
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Analytics } from "@vercel/analytics/react"
 import {
   ContactIcon,
@@ -159,7 +160,7 @@ export default function RootLayout({
             Your browser does not support the video tag.
           </video>
         </div>
-        <div className="text-white ">{children} <Analytics/></div>
+        <div className="text-white ">{children} <Analytics/> <SpeedInsights /></div>
       </body>
     </html>
   );
