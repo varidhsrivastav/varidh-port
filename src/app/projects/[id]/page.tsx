@@ -7,9 +7,10 @@ import { Project } from "@/utils/types";
 import projectData from "@/api/project.json";
 import Link from "next/link";
 import TechUsed from "@/components/tech-used";
+import { ParallaxBanner } from "react-scroll-parallax";
 // @ts-ignore
 const projects: Project[] = projectData;
-
+import { ParallaxProvider } from 'react-scroll-parallax';
 export default function ProjectDesc() {
   const router = useRouter();
   const searchParam = useSearchParams();
@@ -27,6 +28,7 @@ export default function ProjectDesc() {
   if (!project) return <div>Project not found</div>;
   return (
     <>
+    <ParallaxProvider>
       <div className="mx-2 md:mx-[112px] overflow-hidden">
         {/* intro */}
         <div className="mt-24 md:mt-36 mb-32">
@@ -37,13 +39,24 @@ export default function ProjectDesc() {
             {project.subtitle}
           </h2>
           <div className="mt-8 border border-blue-900 bg-[rgba(42,65,85,0.20)] backdrop-blur-lg p-3 md:p-8 rounded-lg">
-            <Image
+            {/* <Image
               src={project.coverImage}
               alt={project.title}
               width={800}
               height={500}
               className="w-full h-full rounded-lg"
-            />
+            /> */}
+             <ParallaxBanner
+            layers={[
+              {
+                image: project.coverImage,
+                speed: -20,
+                expanded: false,
+                className: "w-full h-full ",
+              },
+            ]}
+            className="aspect-[2/1.2] h-[300px] rounded-[24px] w-full md:w-[1240px] md:h-[620px]"
+          />
           </div>
         </div>
         {/* project details */}
@@ -131,6 +144,7 @@ export default function ProjectDesc() {
                 .map((image) => (
                   <div key={image}>
                     <div className="mt-2 md:mt-8 border bg-[rgba(42,65,85,0.20)] backdrop-blur-[25px] border-[#1B3B57] p-2 sm:p-8 rounded-[4px]">
+                      
                       <Image
                         src={image}
                         alt={image}
@@ -249,6 +263,7 @@ export default function ProjectDesc() {
 
         <Footer />
       </div>
+      </ParallaxProvider>
     </>
   );
 }

@@ -55,11 +55,17 @@ export function About() {
           className="absolute  -right-90  opacity-50 md:-right-[50%] lg:-right-[40%] -bottom-40 object-contain rounded-2xl -z-10"
         />
       </WobbleCard>
-      <WobbleCard containerClassName="col-span-1 min-h-[400px] border rounded-[4px] border-[#1B3B57] bg-[rgba(42,65,85,0.20)] backdrop-blur-[25px] bg-[url('https://res.cloudinary.com/dsalsyu0z/image/upload/v1742542385/WhatsApp_Image_2025-03-21_at_13.01.31_rdcfls.jpg')] bg-cover bg-center bg-no-repeat">
+      <WobbleCard containerClassName="col-span-1 min-h-[400px] border rounded-[4px] border-[#1B3B57] bg-[rgba(42,65,85,0.20)] backdrop-blur-[25px] bg-[url('https://res.cloudinary.com/dsalsyu0z/image/upload/v1746369265/PXL_20250305_114448303_iknrvu.jpg')] bg-cover bg-center bg-no-repeat">
         <div className="hidden">c</div>
       </WobbleCard>
-      <WobbleCard containerClassName="col-span-1 min-h-[400px] border rounded-[4px] border-[#1B3B57] bg-[rgba(42,65,85,0.20)] backdrop-blur-[25px] bg-[url('https://res.cloudinary.com/dsalsyu0z/image/upload/v1743014922/Simple_Aesthetic_Quote_Instagram_Post_pnde92.png')] bg-cover bg-center bg-no-repeat">
-        <div className="hidden">c</div>
+      <WobbleCard containerClassName="col-span-1 min-h-[400px] border rounded-[4px] border-[#1B3B57] bg-[rgba(42,65,85,0.20)] backdrop-blur-[25px] g-[url('https://res.cloudinary.com/dsalsyu0z/image/upload/v1743014922/Simple_Aesthetic_Quote_Instagram_Post_pnde92.png')] bg-cover bg-center bg-no-repeat">
+        <div className="">
+          <Image
+          src="https://res.cloudinary.com/dsalsyu0z/image/upload/v1743014922/Simple_Aesthetic_Quote_Instagram_Post_pnde92.png"
+          width={700}
+          height={700}
+          alt="linear"/>
+        </div>
       </WobbleCard>
       {/* <WobbleCard containerClassName="col-span-1 flex justify-center items-center  border rounded-[4px] border-[#1B3B57]   bg-[rgba(42,65,85,0.20)] backdrop-blur-[25px]  ">
         <h1 className="text-[50px]">
@@ -74,10 +80,10 @@ export function About() {
         </h1>
       </WobbleCard> */}
       <WobbleCard containerClassName="col-span-1 lg:col-span-2 border rounded-[4px] border-[#1B3B57]   bg-[rgba(42,65,85,0.20)] backdrop-blur-[25px] min-h-[500px] lg:min-h-[600px] xl:min-h-[300px] gap-4">
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-4">
           {experience.map((ex, i) => (
             <div key={i} className="text-left">
-              <div className="font-display text-[18px] md:text-[23px] leading-[26px] md:leading-[28px] font-normal">
+              <div className="font-display capitalize font-bold text-[18px] md:text-[30px] leading-[26px] md:leading-[28px] ">
                 {ex.title}
               </div>
               <div className="font-display text-[14px] md:text-[16px] font-normal leading-[24px]">

@@ -17,6 +17,8 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import Footer from "@/components/footer";
+import Bot from "./bot";
+
 
 const firaCode = Fira_Code({
   variable: "--font-fira-code",
@@ -160,7 +162,9 @@ export default function RootLayout({
             Your browser does not support the video tag.
           </video>
         </div>
-        <div className="text-white ">{children} <Analytics/> <SpeedInsights /></div>
+        <div className="text-white ">
+          {/* <Bot/>  */}
+          {children} <Analytics/> <SpeedInsights /></div>
       </body>
     </html>
   );
