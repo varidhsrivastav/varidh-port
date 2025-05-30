@@ -37,6 +37,38 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning={true}>
       <body className={`${firaCode.variable} antialiased relative  `}>
+        <iframe
+            id="chatbot-iframe"
+            src="https://nexu-novus-bot.vercel.app/chatbot"
+            style={{
+              position: "fixed",
+              bottom: "50px",
+              right: "50px",
+              background:"red"
+            }}
+            className="bg-transparent z-[1200]"
+          ></iframe>
+
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                (function() {
+                  const iframe = document.getElementById('chatbot-iframe');
+                  window.addEventListener("message", (e) => {
+                    if (e.origin !== "https://nexu-novus-bot.vercel.app") return;
+                    try {
+                      let dimensions = JSON.parse(e.data);
+                      iframe.width = dimensions.width;
+                      iframe.height = dimensions.height;
+                      iframe.contentWindow.postMessage("5dfb2202-dbef-4bcc-95d7-4f1acfc6de90", "https://nexu-novus-bot.vercel.app/");
+                    } catch (err) {
+                      console.error("Invalid message received", err);
+                    }
+                  });
+                })();
+              `,
+            }}
+          />
         <div className=" md:hidden fixed z-[100] backdrop-blur-[25px]    border border-[#3C454D] left-2 top-2   py-4 px-2 right-2 flex flex-row justify-between">
           <div className="min-w-[100px] min-h-[24px] flex flex-row justify-center items-center">
             <Image

@@ -144,7 +144,6 @@ export default function ProjectDesc() {
                 .map((image) => (
                   <div key={image}>
                     <div className="mt-2 md:mt-8 border bg-[rgba(42,65,85,0.20)] backdrop-blur-[25px] border-[#1B3B57] p-2 sm:p-8 rounded-[4px]">
-                      
                       <Image
                         src={image}
                         alt={image}

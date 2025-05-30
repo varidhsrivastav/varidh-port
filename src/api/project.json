@@ -115,7 +115,7 @@
     "id": 4,
     "title": "NotYourCalc",
     "subtitle": "AI-Powered Smart Calculator",
-    "features": true,
+    "features": false,
     "description": "Developed a B2C SaaS application for user integrations and automation. Implemented Next.js, Clerk Authentication, and Stripe, achieving seamless workflows. Created a drag-and-drop node builder and expandable sidebar, ensuring a dynamic user interface.",
     "coverImage": "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742285796/written_llzebq.png",
     "functionality": [
@@ -167,5 +167,36 @@
       "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742285908/Screenshot_2025-03-18_13_08_15_k438wm.png",
       "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742285908/Screenshot_2025-03-18_13_08_21_pmk49o.png"
     ]
-  }
+  },
+  {
+  "id": 6,
+  "title": "SAAS AI Chatbot",
+  "features": true,
+  "subtitle": "Smart AI chatbot solution for modern websites",
+  "description": "This SaaS AI Chatbot offers a complete automation suite for businesses—booking appointments, processing payments, handling customer queries, and generating leads—all through a smart, customizable chatbot easily integrable with any website. Built for scalability and performance, it's a modern solution tailored for conversion-driven customer interactions.",
+  "coverImage": "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742285909/Screenshot_2025-03-18_13_08_11_vyfcgu.png",
+  "functionality": [
+    "Automated AI sales rep (AI chatbot)",
+    "Books appointments and processes payments",
+    "Real-time chat (manual/automated)",
+    "Customizable interface",
+    "Integrates with Stripe for payments"
+  ],
+  "projectType": "Web-Application",
+  "techUsed": [
+    "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742234290/logos_typescript-icon_jgwkp1.png",
+    "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742278220/devicon_tailwindcss_vrqvea.png",
+    "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742279204/next_cfapif.png"
+  ],
+  "links": {
+    "live": "https://live-link.com",
+    "repo": "https://github.com/repo"
+  },
+  "images": [
+    "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742285909/Screenshot_2025-03-18_13_08_11_vyfcgu.png",
+    "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742285908/Screenshot_2025-03-18_13_08_15_k438wm.png",
+    "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742285908/Screenshot_2025-03-18_13_08_21_pmk49o.png"
+  ]
+}
+
 ]
