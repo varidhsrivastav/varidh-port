@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function TechUsed({ technologies }) {
   return (
     // @ts-ignore
-    <div className="grid grid-cols-3 md:grid-cols-9 gap-4 justify-center items-center">
+    <div className="flex lg:flex-row sm:no-wrap flex-wrap gap-3 justify-center items-center">
       {/*  @ts-ignore */}
       {technologies.map((tech, index) => (
         <div

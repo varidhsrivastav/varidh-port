@@ -26,12 +26,12 @@
       "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742680048/ngrok-white-small_nktfqo.png"
     ],
     "links": {
-      "live": "https://live-link.com",
+      "live": "https://nexus-novus-ten.vercel.app/",
       "repo": "https://github.com/varidhsrivastav/NexusNovus"
     },
     "images": [
       "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742280158/Screenshot_2025-03-18_12_05_42_kd2auf.png",
-      "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742158271/Landing_page_c6jclu.png",
+      
       "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742280156/Screenshot_2025-03-18_12_08_43_gywwfc.png",
       "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742280156/Screenshot_2025-03-18_12_09_11_thzrau.png",
       "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742280156/Screenshot_2025-03-18_12_07_37_xs0npp.png",
@@ -39,7 +39,42 @@
     ]
   },
   {
-    "id": 2,
+  "id": 2,
+  "title": "SAAS AI Chatbot",
+  "features": true,
+  "subtitle": "Smart AI chatbot solution for modern websites",
+  "description": "This SaaS AI Chatbot offers a complete automation suite for businesses—booking appointments, processing payments, handling customer queries, and generating leads—all through a smart, customizable chatbot easily integrable with any website. Built for scalability and performance, it's a modern solution tailored for conversion-driven customer interactions.",
+  "coverImage": "https://res.cloudinary.com/dsalsyu0z/image/upload/v1750445052/Screenshot_2025-06-21_at_12.14.06_AM_dfl23h.png",
+  "functionality": [
+    "Automated AI sales rep (AI chatbot)",
+    "Books appointments and processes payments",
+    "Real-time chat (manual/automated)",
+    "Customizable interface",
+    "Integrates with Stripe for payments"
+  ],
+  "projectType": "Web-Application",
+  "techUsed": [
+    "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742234290/logos_typescript-icon_jgwkp1.png",
+    "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742278220/devicon_tailwindcss_vrqvea.png",
+    "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742279204/next_cfapif.png",
+    "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742679615/neon_vatbra.png",
+    "https://res.cloudinary.com/dsalsyu0z/image/upload/v1750445302/gemini-logo_brandlogos.net_fwajr-512x512_j2addz.png",
+    "https://res.cloudinary.com/dsalsyu0z/image/upload/v1750445357/16486629_zwojit.png"
+  ],
+  "links": {
+    "live": "https://nexu-novus-bot.vercel.app/",
+    "repo": "https://github.com/varidhsrivastav/NexuNovusBot"
+  },
+  "images": [
+    "https://res.cloudinary.com/dsalsyu0z/image/upload/v1750444988/Screenshot_2025-06-21_at_12.11.03_AM_qsua9p.png",
+    "https://res.cloudinary.com/dsalsyu0z/image/upload/v1750444988/Screenshot_2025-06-21_at_12.11.44_AM_jvavxs.png",
+    "https://res.cloudinary.com/dsalsyu0z/image/upload/v1750444988/Screenshot_2025-06-21_at_12.11.26_AM_wppmgn.png",
+    "https://res.cloudinary.com/dsalsyu0z/image/upload/v1750444988/Screenshot_2025-06-21_at_12.11.56_AM_hfutcb.png",
+    "https://res.cloudinary.com/dsalsyu0z/image/upload/v1750444988/Screenshot_2025-06-21_at_12.12.20_AM_uhxq8h.png"
+  ]
+},
+  {
+    "id": 3,
     "title": "Pair-Programming",
     "features": true,
     "subtitle": "Collaborate in Real-Time with Live Code Sharing",
@@ -63,7 +98,7 @@
       "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742680248/logo-xs_wpyuxw.png"
     ],
     "links": {
-      "live": "https://live-link.com",
+      "live": "https://pair-prog.vercel.app/",
       "repo": "https://github.com/varidhsrivastav/PairProg"
     },
     "images": [
@@ -74,7 +109,7 @@
     ]
   },
   {
-    "id": 3,
+    "id": 4,
     "title": "AutoV1",
     "features": true,
     "subtitle": "Effortless Workflow Automation, Built for Scalability",
@@ -99,8 +134,8 @@
       "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742680048/ngrok-white-small_nktfqo.png"
     ],
     "links": {
-      "live": "https://live-link.com",
-      "repo": "https://github.com/repo"
+      "live": "",
+      "repo": "https://github.com/varidhsrivastav/autoItv1"
     },
     "images": [
       "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742285759/Screenshot_2025-03-18_12_17_33_fjxt8f.png",
@@ -112,7 +147,7 @@
     ]
   },
   {
-    "id": 4,
+    "id": 5,
     "title": "NotYourCalc",
     "subtitle": "AI-Powered Smart Calculator",
     "features": false,
@@ -132,71 +167,15 @@
       "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742678472/download_jmzn9m.png"
     ],
     "links": {
-      "live": "https://live-link.com",
-      "repo": "https://github.com/repo"
+      "live": "",
+      "repo": "https://github.com/varidhsrivastav/notYourCalc"
     },
     "images": [
       "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742285796/written_llzebq.png",
       "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742285796/generated_nts39d.png"
     ]
-  },
-  {
-    "id": 5,
-    "title": "Sarvmatre Pvt Ltd",
-    "features": false,
-    "subtitle": "A corporate website for Sarvmatre Pvt Ltd",
-    "description": "Sarvmatre Pvt Ltd's official corporate website serves as a gateway to our vision, innovation, and business excellence. Explore our services, leadership, and latest updates while discovering how we drive industry transformation with cutting-edge solutions.",
-    "coverImage": "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742285909/Screenshot_2025-03-18_13_08_11_vyfcgu.png",
-    "functionality": [
-      "Responsive Design",
-      "Form interaction",
-      "Client & Partner Portal "
-    ],
-    "projectType": "Web-Application",
-    "techUsed": [
-      "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742234290/logos_typescript-icon_jgwkp1.png",
-      "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742278220/devicon_tailwindcss_vrqvea.png",
-      "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742279204/next_cfapif.png"
-    ],
-    "links": {
-      "live": "https://live-link.com",
-      "repo": "https://github.com/repo"
-    },
-    "images": [
-      "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742285909/Screenshot_2025-03-18_13_08_11_vyfcgu.png",
-      "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742285908/Screenshot_2025-03-18_13_08_15_k438wm.png",
-      "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742285908/Screenshot_2025-03-18_13_08_21_pmk49o.png"
-    ]
-  },
-  {
-  "id": 6,
-  "title": "SAAS AI Chatbot",
-  "features": true,
-  "subtitle": "Smart AI chatbot solution for modern websites",
-  "description": "This SaaS AI Chatbot offers a complete automation suite for businesses—booking appointments, processing payments, handling customer queries, and generating leads—all through a smart, customizable chatbot easily integrable with any website. Built for scalability and performance, it's a modern solution tailored for conversion-driven customer interactions.",
-  "coverImage": "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742285909/Screenshot_2025-03-18_13_08_11_vyfcgu.png",
-  "functionality": [
-    "Automated AI sales rep (AI chatbot)",
-    "Books appointments and processes payments",
-    "Real-time chat (manual/automated)",
-    "Customizable interface",
-    "Integrates with Stripe for payments"
-  ],
-  "projectType": "Web-Application",
-  "techUsed": [
-    "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742234290/logos_typescript-icon_jgwkp1.png",
-    "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742278220/devicon_tailwindcss_vrqvea.png",
-    "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742279204/next_cfapif.png"
-  ],
-  "links": {
-    "live": "https://live-link.com",
-    "repo": "https://github.com/repo"
-  },
-  "images": [
-    "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742285909/Screenshot_2025-03-18_13_08_11_vyfcgu.png",
-    "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742285908/Screenshot_2025-03-18_13_08_15_k438wm.png",
-    "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742285908/Screenshot_2025-03-18_13_08_21_pmk49o.png"
-  ]
-}
+  }
+  
+  
 
 ]
