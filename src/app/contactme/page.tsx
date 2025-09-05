@@ -1,11 +1,16 @@
 "use client";
 
-import { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { PopupWidget } from "react-calendly";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import emailjs from "emailjs-com";
 import { useRouter } from "next/navigation";
+import { InlineWidget } from "react-calendly";
+import Link from "next/link";
+import { Dialog, DialogTrigger, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
+
 
 // Define validation schema using zod
 const contactSchema = z.object({
@@ -59,7 +64,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="min-h-screen flex justify-center items-center px-4">
+    <div className="min-h-screen flex flex-col justify-center items-center px-4 py-[200px]">
       <div className="border border-[#1B3B57] backdrop-blur-[25px] rounded-[4px] flex flex-col p-8 gap-8 bg-[rgba(42,65,85,0.20)] w-full max-w-[650px]">
         <h1 className="text-white font-display text-[26px] leading-[32px] font-medium mb-4">
           Have an awesome project in mind?
@@ -143,6 +148,38 @@ export default function Contact() {
           </div>
         </form>
       </div>
+      {/* <div>
+        <div className="pt-[64px] sm:pt-[80px] md:pt-[96px] pb-[80px] sm:pb-[96px] md:pb-[112px]">
+        <div className="flex flex-col gap-6 sm:gap-8 justify-center items-center border border-[#1B3B57] rounded-[4px] bg-[rgba(42,65,85,0.20)] p-6 sm:p-8">
+          <div className="text-[36px] sm:text-[44px] md:text-[52px] text-white font-medium leading-[44px] sm:leading-[56px] md:leading-[64px] text-center font-dmono">
+            Have an awesome project in mind?
+          </div>
+           <div>
+      <Dialog>
+        <DialogTrigger asChild>
+          <button className="border border-[#3C454D] rounded-[4px] min-h-[24px] py-2 px-4 text-[14px] sm:text-[16px] leading-[20px] sm:leading-[24px] text-white font-dmono hover:bg-[#3C454D]/20 transition">
+            Contact me
+          </button>
+        </DialogTrigger>
+        <DialogContent className="">
+          <DialogHeader>
+            <DialogTitle className="text-center text-lg sm:text-xl">Book a call with me</DialogTitle>
+          </DialogHeader>
+          <div className="flex justify-center">
+            <InlineWidget
+              url="https://calendly.com/varidhsrivastav"
+              styles={{
+                width: '1000px',
+                height: '700px',
+              }}
+            />
+          </div>
+        </DialogContent>
+      </Dialog>
+    </div>
+        </div>
+      </div>
+      </div> */}
     </div>
   );
 }

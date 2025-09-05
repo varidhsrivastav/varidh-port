@@ -16,6 +16,7 @@ import { AnimatedTestimonials } from "@/components/ui/animated-testimonials";
 import Testimonials from "@/components/testimonial";
 import { DragCards } from "@/components/about-me";
 import { About } from "@/components/about";
+import Credit from "@/components/Credit";
 
 // @ts-ignore
 const projects: Project[] = projectData;
@@ -150,6 +151,7 @@ export default function Home() {
       {/* testimonials */}
       <Testimonials />
       <Footer />
+      <Credit/>
     </div>
   );
 }
