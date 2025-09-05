@@ -6,7 +6,7 @@ const experience = [
   {
     title: "FullStack developer intern",
     company: "Swafinix Technologies,",
-    duration: "March 2025 - Present",
+    duration: "March 2025 - July 2025",
     description:
       "Led the design and implementation of scalable system architectures, managing a team of 8-10 developers using Next.js, Tailwind, and FastAPI. Managed project completion and task organization using Jira, improving workflow efficiency.",
   },
