@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { DM_Mono, Fira_Code } from "next/font/google";
 import "./globals.css";
-import { SpeedInsights } from '@vercel/speed-insights/next';
-import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 import {
   ContactIcon,
   Facebook,
@@ -19,7 +19,6 @@ import Link from "next/link";
 import Footer from "@/components/footer";
 import Bot from "./bot";
 
-
 const firaCode = Fira_Code({
   variable: "--font-fira-code",
   subsets: ["latin"],
@@ -27,6 +26,33 @@ const firaCode = Fira_Code({
 
 export const metadata: Metadata = {
   title: "Varidh Portfolio",
+  description:
+    "Explore Varidh Srivastav's portfolio: projects, skills, and contact information.",
+  openGraph: {
+    title: "Varidh Portfolio",
+    description:
+      "Explore Varidh Srivastav's portfolio: projects, skills, and contact information.",
+    url: "https://varidh.in", // Replace with your actual domain
+    siteName: "Varidh Portfolio",
+    images: [
+      {
+        url: "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742223121/Varidh_logo_ll6tye.png",
+        width: 1200,
+        height: 630,
+        alt: "Varidh Portfolio Logo",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Varidh Portfolio",
+    description:
+      "Explore Varidh Srivastav's portfolio: projects, skills, and contact information.",
+    images: [
+      "https://res.cloudinary.com/dsalsyu0z/image/upload/v1742223121/Varidh_logo_ll6tye.png",
+    ],
+  },
 };
 
 export default function RootLayout({
@@ -37,17 +63,16 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning={true}>
       <body className={`${firaCode.variable} antialiased relative  `}>
-        
-
-          
         <div className=" md:hidden fixed z-[100] backdrop-blur-[25px]    border border-[#3C454D] left-2 top-2   py-4 px-2 right-2 flex flex-row justify-between">
           <div className="min-w-[100px] min-h-[24px] flex flex-row justify-center items-center">
-            <Image
-              src="https://res.cloudinary.com/dsalsyu0z/image/upload/v1742223121/Varidh_logo_ll6tye.png"
-              alt="Varidh Logo"
-              width={100}
-              height={24}
-            />
+            <Link href="/" className="z-[9999]">
+              <Image
+                src="https://res.cloudinary.com/dsalsyu0z/image/upload/v1742223121/Varidh_logo_ll6tye.png"
+                alt="Varidh Logo"
+                width={100}
+                height={24}
+              />
+            </Link>
           </div>
           <div>
             <Link
@@ -167,7 +192,8 @@ export default function RootLayout({
         </div>
         <div className="text-white ">
           {/* <Bot/>  */}
-          {children} <Analytics/> <SpeedInsights /></div>
+          {children} <Analytics /> <SpeedInsights />
+        </div>
       </body>
     </html>
   );

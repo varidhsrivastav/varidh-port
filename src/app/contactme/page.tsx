@@ -180,12 +180,6 @@ export default function Contact() {
         </div>
       </div>
       </div>
-        {/* <div className="App">
-      <InlineWidget url="https://calendly.com/varidhsrivastav" styles={{
-  width: '1000px'
-}} />
-    </div> */}
-    
     </div>
   );
 }
