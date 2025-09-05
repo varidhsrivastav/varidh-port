@@ -148,7 +148,7 @@ export default function Contact() {
           </div>
         </form>
       </div>
-      <div>
+      {/* <div>
         <div className="pt-[64px] sm:pt-[80px] md:pt-[96px] pb-[80px] sm:pb-[96px] md:pb-[112px]">
         <div className="flex flex-col gap-6 sm:gap-8 justify-center items-center border border-[#1B3B57] rounded-[4px] bg-[rgba(42,65,85,0.20)] p-6 sm:p-8">
           <div className="text-[36px] sm:text-[44px] md:text-[52px] text-white font-medium leading-[44px] sm:leading-[56px] md:leading-[64px] text-center font-dmono">
@@ -179,7 +179,7 @@ export default function Contact() {
     </div>
         </div>
       </div>
-      </div>
+      </div> */}
     </div>
   );
 }
